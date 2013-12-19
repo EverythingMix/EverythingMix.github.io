@@ -1,0 +1,9 @@
+name: "Everything Mix"
+description: "As always, our core rule is to be nice."
+url: "http://everythingmix.github.io"
+paginate: 10
+paginate_path: /news/page:num/
+permalink: /news/:year/:month/:day/:title.html
+markdown: rdiscount
+pygments: true
+exclude: ['*.sublime-*', drafts, templates, build, s3_website.xml, .gitignore, .dropbox, .DS_Store]

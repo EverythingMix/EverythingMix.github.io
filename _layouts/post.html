@@ -1,0 +1,11 @@
+{% include header.html %}
+<h3 class="page-header">{{ page.title }}</h3>
+<p class="text-muted"><small>Posted by <a href="{{ site.data.author.google-plus-url }}?rel=author" target="_blank">Mike Wills</a> on {{page.date | date: "%m/%d/%Y"}}</small></p>
+{{ content }}
+<div class="well well-sm">
+	<h6>Like this article? Please share it!</h6>
+	<p><a href="http://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" data-toggle="tooltip" data-placement="top" title data-original-title="Share to Facebook" class="btn btn-primary btn-xs">Like</a> | 
+	<a href="http://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&text={{ page.title }}&via=MikeWills" data-toggle="tooltip" data-placement="top" title data-original-title="Share to Twitter" class="btn btn-primary btn-xs">Tweet</a> | 
+	<a class="btn btn-primary btn-xs" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" data-toggle="tooltip" data-placement="top" title data-original-title="Share to Google+" >+1</a></p>
+</div>
+{% include footer.html %}

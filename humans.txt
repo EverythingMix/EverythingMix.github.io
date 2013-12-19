@@ -1,0 +1,15 @@
+                            
+/* TEAM */
+Programmer: Mike Wills
+Contact: {{ site.data.author.google-plus }}
+Twitter: {{ site.data.author.twitter }}
+Location: Mankato, MN, USA
+
+/* THANKS */		
+Name: None at this time.
+                            
+/* SITE */
+Last update: 2013-10-29
+Standards: HTML5, CSS3, RSS, Sitemap
+Components: Bootstrap 3
+Software: Jekyll, Sublime Text
