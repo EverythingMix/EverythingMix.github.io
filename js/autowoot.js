@@ -49,7 +49,7 @@
 
   initialize = function() {
     initHooks();
-    upVote();
+    wootButton.click();
   };
 
   initialize();
