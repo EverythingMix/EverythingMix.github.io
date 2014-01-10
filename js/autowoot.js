@@ -7,10 +7,6 @@
     return API.on(apiEvent, callback);
   };
 
-  unhook = function(apiEvent, callback) {
-    return API.off(apiEvent, callback);
-  };
-
   djAdvanceEvent = function(data)
   {
     var rand = Math.ceil(Math.random() * 20);
@@ -37,19 +33,10 @@
     return _results;
   };
 
-  undoHooks = function() {
-    var pair, _i, _len, _results;
-    _results = [];
-    for (_i = 0, _len = apiHooks.length; _i < _len; _i++) {
-      pair = apiHooks[_i];
-      _results.push(unhook(pair['event'], pair['callback']));
-    }
-    return _results;
-  };
-
   initialize = function() {
     initHooks();
     wootButton.click();
+    API.sendChat("/me loaded the official EM autowoot script from http://everythingmix.github.io/");
   };
 
   initialize();
